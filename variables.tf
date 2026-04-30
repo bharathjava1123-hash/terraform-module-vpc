@@ -6,7 +6,7 @@ variable "cidr_block" {
 
 variable "project_name" {
   type        = string
-  default     = "Expense"
+  default     = "expense"
  
 }
 
