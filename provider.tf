@@ -5,6 +5,16 @@ terraform {
       version = "5.66.0"
     }
   }
+
+  backend "s3" {
+
+    bucket = "terraform-test11"
+    key    = "terraform-test11-demo"
+    region = "us-east-1"
+    dynamodb_table = "terraform-test11"
+  
+  }
+
 }
 
 provider "aws" {
