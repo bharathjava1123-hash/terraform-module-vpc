@@ -42,3 +42,7 @@ variable "database_subnet_cidr_block" {
   
 }
 
+variable "is_peering_required" {
+    type = bool
+    default = true
+}
