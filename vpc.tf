@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../terraform-aws-vpc"
+  source = "git::https://github.com/bharathjava1123-hash/terraform-aws-vpc.git?ref=main"
   cidr_block = var.cidr_block
   project_name = var.project_name
   environment =  var.environment
